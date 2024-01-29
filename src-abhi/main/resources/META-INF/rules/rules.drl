@@ -1,0 +1,19 @@
+package rules
+import com.integra.pledgeapp.beans.DroolBank
+
+rule "personalloan"
+
+when 
+droolBankObject:DroolBank(typeOfLoan=="personalloan" && loanAmount>10000)
+then
+droolBankObject.setPercentage("10%");
+end
+
+
+rule "homeloan"
+
+when 
+droolBankObject:DroolBank(typeOfLoan=="homeloan" && loanAmount>10000)
+then
+droolBankObject.setPercentage("15%");
+end

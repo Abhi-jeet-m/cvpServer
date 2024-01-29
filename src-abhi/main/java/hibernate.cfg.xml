@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE hibernate-configuration PUBLIC -->
+<!--"-//Hibernate/Hibernate Configuration DTD 3.0//EN" -->
+<!--"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"> -->
+<!--classpath://com/myProj/util/hibernate-configuration-3.0.dtd -->
+<!DOCTYPE hibernate-configuration PUBLIC
+  "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/emp_pledge_app</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.dialect">	org.hibernate.dialect.MySQL5InnoDBDialect</property>
+		<property name="hibernate.show_sql">false</property>
+
+
+
+
+		<property name="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+		<property name="connection.autoReconnect">true</property>
+		<property name="connection.autoReconnectForPools">true</property>
+		<property name="connection.is-connection-validation-required">true</property>
+
+		<property name="hibernate.c3p0.max_size">25</property>
+		<property name="hibernate.c3p0.max_statements">0</property>
+		<property name="hibernate.c3p0.min_size">3</property>
+		<property name="hibernate.c3p0.timeout">25200</property>
+		<property name="hibernate.c3p0.validate">true</property>
+		<property name="hibernate.c3p0.autoCommitOnClose">false</property>
+		<property name="hibernate.c3p0.acquireRetryDelay">1000</property>
+		<property name="hibernate.c3p0.acquireRetryAttempts">60</property>
+		<!-- determines how many connections at a time c3p0 will try to acquire 
+			when the pool is exhausted. -->
+		<property name="hibernate.c3p0.acquire_increment">3</property>
+		<property name="hibernate.c3p0.idle_test_period">14400</property>
+		<property name="hibernate.c3p0.preferredTestQuery">select 1;</property>
+		<property name="hibernate.c3p0.testConnectionOnCheckout">true</property>
+		<property name="hibernate.c3p0.testConnectionOnCheckin">true</property>
+
+		<mapping class="com.integra.pledgeapp.beans.Employee_Master" />
+		<mapping
+			class="com.integra.pledgeapp.beans.Emp_Master_CompositeKey" />
+		<mapping class="com.integra.pledgeapp.beans.Sign_Log" />
+		<mapping class="com.integra.pledgeapp.beans.User_Master" />
+		<mapping class="com.integra.pledgeapp.beans.Mail_Config" />
+		<mapping class="com.integra.pledgeapp.beans.Audit_Info" />
+		<mapping
+			class="com.integra.pledgeapp.beans.Employee_action_master" />
+		<mapping
+			class="com.integra.pledgeapp.beans.Employee_action_status" />
+		<mapping
+			class="com.integra.pledgeapp.beans.Employee_action_target" />
+		<mapping class="com.integra.pledgeapp.beans.Doc_Sign_Config" />
+		<mapping class="com.integra.pledgeapp.beans.Dsc_Token_Config" />
+		<mapping class="com.integra.pledgeapp.beans.Sign_Doc_Details" />
+		<mapping class="com.integra.pledgeapp.beans.User_Requests" />
+		<mapping
+			class="com.integra.pledgeapp.beans.Sign_Rejected_Info" />
+		<mapping class="com.integra.pledgeapp.beans.Template_Master" />
+		<mapping class="com.integra.pledgeapp.beans.Field_Validation" />
+		<mapping class="com.integra.pledgeapp.beans.Company_Master" />
+		<mapping class="com.integra.pledgeapp.beans.Bulk_Data_Upload_Logs" />
+		
+
+
+		<mapping
+			class="com.integra.pledgeapp.beans.Action_Master_Lang" />
+	</session-factory>
+</hibernate-configuration>
+
+
+

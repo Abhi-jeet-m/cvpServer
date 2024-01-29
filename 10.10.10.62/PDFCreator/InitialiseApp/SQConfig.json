@@ -1,0 +1,16 @@
+{
+	"ServerConfig" : {
+		"ServerTimedoutTime" :120,
+		"ServerMaxConnAllowed" : 100,
+		"ServerCommType" : "http"
+	},
+
+	"Database" : {
+		"HOST"       : "localhost",
+		"PORT"       : 3306,
+		"USER"       : "satya",
+		"PASSWORD"   : "password",
+		"DATABASE"   : "SQUIRREL",
+		"DBTYPE"     : "MYSQL"
+	}
+}
