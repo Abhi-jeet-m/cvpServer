@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Expires" content="0" />
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<script type="text/javascript" src="/CORE_VALUE_PLEDGE_APP/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/CORE_VALUE_PLEDGE_APP/js/function.js"></script>
+<link href="/CORE_VALUE_PLEDGE_APP/styles.css" rel="stylesheet" type="text/css">
+<script>
+$(document).ready(function($) {
+    if (window.history && window.history.pushState) {
+
+      $(window).on('popstate', function() {
+        var hashLocation = location.hash;
+        var hashSplit = hashLocation.split("#!/");
+        var hashName = hashSplit[1];
+
+        if (hashName !== '') {
+          var hash = window.location.hash;
+          if (hash === '') {
+            window.location = '/CORE_VALUE_PLEDGE_APP/TERMS';
+              return false;
+          }
+        }
+      });
+      window.history.pushState('forward', null, null);
+    }
+});
+</script>
+</head>
+
+<title>Offline Pledge Doc</title>
+
+<body id="offlinepledgedoc">
+	<div class="login-main-container">
+		<div class="login-content">
+			<br>
+			<div class="pledgeinfo-container-unsigned">
+				 <embed id="pledgeinfodoc" type="application/pdf" src="" width="100%" height="95%" /> 
+				<br><br>
+				<button type="submit" class="submit"
+						style="margin-left: auto; margin-right: auto; display: block; width:15%"
+						id="backfromofflinepledgedoc">BACK</button>
+				<br>
+				<div>
+					
+					<br> <input type="submit" class="submit" name="submit" id="toinstructions" hidden>
+					<!--<button type="submit" id="downloaddoc">Download!</button>-->
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

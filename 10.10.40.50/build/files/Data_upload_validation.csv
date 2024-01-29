@@ -1,0 +1,28 @@
+Column Names ,Accepted Characters ,Not Allowed 
+STATE,Only alphabets are accepted (A-Z or a-z) and space is accepted,"Numbers, special characters or empty or null value  "
+BANK(the value will be shown in agreement bc details and BC sign seal ,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+DISTRICT,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+TALUK/BLOCK/MANDAL,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+BRANCH NAME,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+BRANCH CODE,Only Numbers [0-9],"No alphabets, no special characters, no empty or null value "
+VILLAGE NAME,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+BCA LOCATION,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+BC/BANK MITR,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+GENDER (F/M),Only alphabets are accepted (A-Z or a-z) and space is accepted,"Numbers, special characters or empty or null value  "
+BC CONTACT NO.,accepts only numbers and first digit should be within [6-9] and no .of digits should be 10 digit only,"Alphabets, special characters or empty or null "
+DOB (YYYY-MM-DD),date format should be YYYY-MM-DD only and no alphabets are allowed and no special character except – is allowed ,Alphabets and special characters are not allowed(except ‘-’ ) and empty or null is not allowed 
+AGE,only numbers are allowed and age limit is 18 to 70 ,"no special characters, no alphabets, no space allowed, no empty no null value "
+NAME OF FATHER/HUSBAND / WO,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+TERMINAL ID,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+MERCHANT ID,accepts [a-zA-Z][0-9] ,Other than accepted characters or empty or null value 
+SETTLEMENT AC NO,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+SB AC NO,Only Numbers [0-9],"No alphabets, no special characters, no empty or null value "
+AADHAAR PINCODE,Only Numbers [0-9] and it must be 6 digits,"No alphabets, no special characters, no empty or null value "
+PAN CARD NO,accepts [a-zA-Z] [0-9] and length must be 10 ,Special characters and empty null are not allowed 
+BC ENGAGEMENT DATE(DD/MM/YYYY),only numbers and / is allowed and formate should be DD/MM/YYYY,Special characters except / are not allowed and other format of date also not allowed 
+RESIDENTIAL ADDRESS,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+IFSC1,length must be 11 and it can accept numbers and alphabets ,no special characters and empty or null value 
+IFSC2,length must be 11 and it can accept numbers and alphabets ,no special characters and empty or null value 
+ACT,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+BANK ADDRESS,"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
+BANK FULL NAME (This will be shown in the point B of bc agreement ),"accepts [a-zA-Z] [0-9] ['!@#$&()\\-`.+,/\""]",Other than accepted characters or empty or null value 
