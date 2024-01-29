@@ -18,7 +18,7 @@ public class CoeValuePledgeAppApplication {
 		System.out.println("===========================================================");
         System.out.println("=                 Core Value Pledge App                   =");
         System.out.println("=                 Version 00_00_56                     =");
-        System.out.println("=                 App Version 1.4.5                    =");
+        System.out.println("=                 App Version 1.4.6		                 =");
         System.out.println("===========================================================");
 		SpringApplication.run(CoeValuePledgeAppApplication.class, args);
 		Properties_Loader.loadProperties();
